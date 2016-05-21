@@ -1,0 +1,65 @@
+.display-none {
+  display: none !important;
+}
+
+.clear{
+  clear: both;
+}
+
+.text-align-left{
+  text-align: left;
+}
+
+.text-align-right{
+  text-align: right;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.text-align-justify{
+  text-align: justify;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.opacityie8 {
+  background-color:transparent;
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FFFFFF',endColorstr='#00FFFFFF'); /* IE6 & 7 */
+  zoom:1;
+}
+
+// .user-select-none{
+//   @include user-select("none");
+// }
+
+// In
+$c: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+$easeInQuart: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+$easeInExpo: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+
+// Out
+$easeOutQuad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+$easeOutQuart: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$easeOutExpo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+
+//In out
+$easeInOutQuad:  cubic-bezier(0.455,  0.030, 0.515, 0.955);
+
+
+//Mixin
+@mixin grayscale($percent){
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale($percent); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  -webkit-transform: translate3d(0, 0, 0);//FORCE GPU
+}

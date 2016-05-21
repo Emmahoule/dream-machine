@@ -1,0 +1,62 @@
+/** PAGE **/
+.page {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.changepage {
+}
+
+::-webkit-scrollbar {
+  width:  5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F0F0F0;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+
+body{
+   background-color: #000000;
+   padding: 0px;
+   margin: 0px;
+   color: #FFF;
+   width: 100%;
+  	height: 100%;
+  	overflow: hidden;
+  	font-family: "Brandon Grotesque";
+ }
+
+#gradient
+{
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  margin: 0px;
+}
+
+a{
+	text-decoration: none;
+	@include transition(all 0.4s $easeInOutQuad);
+} 
+
+.main-content {
+	position: absolute;
+	width: 80%;
+	left: 20%;
+	height: 100%;
+	padding-left: 50px;
+}
+
+.logo {
+	text-align: center;
+}
+

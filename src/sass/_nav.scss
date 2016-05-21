@@ -1,0 +1,44 @@
+.main-nav {
+	position: absolute;
+	top: 50%;
+	@include translate(0%,-50%);
+	line-height: 50px; 
+	width: 20%;
+	padding-left: 50px;
+	letter-spacing: 1px;
+}
+
+.main-nav-item {
+	font-size: 10px;
+	text-transform: uppercase;
+	opacity: 0.6;
+	@include transition(all 0.4s $easeInOutQuad);
+}  
+
+.main-nav-item:hover {
+	opacity: 1;
+	@include transform(scale(1.3) translate(40px, 0));
+}
+
+.main-nav-title {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.main-nav-title::after {
+	display: inline-block;
+	content: "";
+	width: 60px;
+	margin-left: 20px;
+	height: 1px;
+	background-color: #FFF;
+}
+
+.main-nav-item-link {
+	color: #FFF;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 3px;
+}
+
