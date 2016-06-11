@@ -1,3 +1,3 @@
 # Dream machine #
 
-Website for the dreams national day (work in progress).
+Website for the dreams national day (fictional project, work in progress).
